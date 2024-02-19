@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    width: 450px;
+    height: 450px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.field{
+    flex: 0 0 20%;
+    border: 1px solid black;
+}
