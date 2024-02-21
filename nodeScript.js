@@ -7,6 +7,12 @@ app.get('*', (req, res) => {
   res.redirect('/index.html');
 });
 
+let boolean = false;
+app.put('*',(req,res) => {
+  boolean = !boolean;
+  res.json({boolean})
+})
+
 app.listen(3000, () =>
   console.log('Example app listening on port 3000!'),
 );
